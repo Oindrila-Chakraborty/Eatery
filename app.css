@@ -497,12 +497,13 @@ footer .social-media a{
         
         
     }
-
-    
+    #about, #menu, #location, #reserve, #review, #contact, #gallery{
+        margin-top: 25%;
+    }
     #bestsellers .col-8{
         margin: 0 20%;
     }
-    #bestsellers .heading, #about .heading, #gallery .heading, #reserve .heading, #review .heading, #contact .heading, #menu .heading h1{
+    #bestsellers .heading, #about .heading, #gallery .heading, #reserve .heading, #review .heading, #location .heading, #contact .heading, #menu .heading h1{
         font-size: 3em;
     }
     #bestsellers .image i{
