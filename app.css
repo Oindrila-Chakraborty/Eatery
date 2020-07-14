@@ -1,0 +1,525 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    scroll-behavior: smooth;
+    font-family: 'Fira Sans', sans-serif;
+}
+body{
+    width: 80%;
+    margin: 0 auto;
+    background-color: #e8f4fa;
+    box-shadow: 0px 5px 10px #c7c7c7;
+}
+main{
+    background-color: #FAFBFB;
+}
+
+/* header */
+header{
+    
+    height: 80vh;
+    background-image: url(https://images.pexels.com/photos/5938/food-salad-healthy-lunch.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-position: center;
+    background-size: cover;
+
+}
+header>.container{
+    width: 80%;
+    margin: 0 auto 20vh auto;
+    padding-top: 20vh;
+    text-align: center;
+    color: white;
+    
+    
+}
+header .container h1{
+    font-size: 5em;
+    font-weight: 700;
+}
+header .container p{
+    color: white;
+    font-size: 2em;
+
+}
+header .container .btn{
+    border: 2px solid white;
+    color: white;
+    font-size: bold;
+}
+header .container .btn:hover{
+    background-color: #ebbe0c;
+    color: #212120;
+    border: none;
+}
+
+/* navbar */
+nav{
+    position: fixed;
+    top: 0;
+    height: 8vh;
+    z-index: 100;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    background-color: rgba(200, 200, 200, 0);
+    width: 80%;
+    padding: 2vh 1em;
+    
+}
+nav .logo h3{
+    font-size: 2em;
+    color: #ebbe0c;
+    font-weight: 700;
+}
+.navlinks{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    
+    
+}
+nav.scrolled {
+    background-color: white !important;
+    transition: background-color 200ms linear;
+  }
+.navlinks a{
+    text-decoration: none;
+    color: #ebbe0c;
+    font-size: 1.2em;  
+    font-weight: bold;
+    
+}
+.navlinks a:hover{
+    color: #343636;
+}
+.burger{
+    
+    padding: 0.2em 0.1em;
+    cursor: pointer;
+    display: none;
+}
+.burger i{
+    width: 20px;
+    height: 2px;
+    color: #ebbe0c;
+    font-size: 2em;
+    
+}
+
+/* top-rated section */
+#bestsellers{
+    margin-top: 10%;
+    
+}
+#bestsellers .row div{
+    padding: 0;
+}
+
+#bestsellers .image img{
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+    
+}
+#bestsellers .up i{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    left: 10px;
+    z-index: 20;
+    font-size: 2.5em;
+    color: #FAFBFB;
+    transition: all 1s;
+}
+#bestsellers .down i{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    left: 10px;
+    z-index: 20;
+    font-size: 2.5em;
+    color: #FAFBFB;
+    transition: all 1s;
+}
+#bestsellers .down:hover i{
+    color: #212120;
+    font-size: 3em;
+
+}
+#bestsellers .up:hover i{
+    color: #212120;
+    font-size: 3em;
+}
+#bestsellers .row .name{
+    padding-top: 15%;
+    padding-bottom: 15%;
+}
+
+#bestsellers .row .name h2{
+    font-weight: 100;
+    color: #212120;
+}
+#bestsellers .row .name h2+p{
+    font-weight: 100;
+    color: #ABBAC8;
+}
+#bestsellers .name .type{
+    color: #ebbe0c;
+    letter-spacing: 5px;
+}
+#bestsellers .name a{
+    color: #212120;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+#bestsellers .name a i{
+    padding-left: 0.3em;
+    transition: all 0.3s;
+}
+#bestsellers .name a:hover i{
+    margin-left: 0.3em;
+}
+
+/* about section */
+#about .col-lg-6 h2{
+    font-size: 2em;
+    font-weight: bold;
+}
+#about .col-lg-6 p{
+
+    color:grey;
+    line-height: 2em;
+}
+#about .card{
+    border: none;
+    background-color: #FAFBFB;
+}
+#about .card .card-img-top{
+    height: 300px;
+    width: 300px;
+    border-radius:50%;
+    margin: 2em 20%;
+}
+#about .card .card-title{
+    font-weight: bold;
+    font-size: 1.5em;
+}
+#about .card .post{
+     color: #c7c7c7;
+}
+#about .card .card-text{
+    color: #c7c7c7;
+    font-style: italic;
+}
+#chefs{
+    margin-top: 10%;
+}
+#chefs h1{
+    font-size: 3em;
+    font-weight: 100;
+}
+#chefs .card i{
+    color: #ebbe0c;
+    transition: all 0.1s;
+}
+#chefs .card i:hover{
+    color: orangered;
+}
+
+/* menu section */
+#menu{
+    margin-top: 10%;
+    padding-top: 5%;
+    
+}
+#menu .heading{
+    margin-bottom: 10%;
+    border-bottom: 1px solid #c7c7c7;
+}
+#menu .heading h1{
+    font-weight: light;
+    font-size: 4em;
+}
+#menu .heading p{
+    color: #c2b8b8;
+    letter-spacing: 3px;
+    font-size: 1.5em;
+}
+#menu .buttons button{
+    background-color: #FAFBFB;
+    color: #ebbe0c;
+    outline: none;
+    border: 1.5px solid #ebbe0c;
+}
+#menu .buttons .activate{
+    background-color: #ebbe0c;
+    color: #FAFBFB;
+}
+#menu .container{
+    width: 80%;
+}
+#menu .container .row{
+    border-bottom: 1px solid #ebbe0c;
+}
+#menu .container .row img{
+    height: 100%;
+    width: 100%;
+}
+#menu .container .row h3{
+    font-weight: bold;
+}
+#menu .container .row .col-lg-6 p{
+    
+    color: #948f8f;
+}
+#menu .container .row h2{
+    color: #ebbe0c;
+    font-weight: 100;
+    font-size: 2em;
+}
+
+/* gallery section */
+#gallery .col-lg-3 img{
+    height: 100%;
+    width: 100%;
+}
+#gallery .col-lg-3{
+    padding: 0;
+}
+
+/* reserve section */
+#reserve form{
+    width: 80%;
+    margin: 0 auto;
+    padding: 3em 2em;
+    box-shadow: 2px 4px 10px #948f8f;
+    background-color: #fcfcfc;
+    
+}
+#reserve form label{
+    color: #ebbe0c;
+    
+}
+#reserve form button{
+    background-color: #FAFBFB;
+    border: 1.5px solid #ebbe0c;
+    color: #ebbe0c;
+    width: 7em;
+    padding: 0.1em;
+    outline: none;
+}
+#reserve form button:hover{
+    color: #FAFBFB;
+    background-color: #ebbe0c;
+}
+#reserve form input{
+    border: 1.5px solid #ebbe0c;
+    border-radius: 0.3em;
+    padding: 0.3em;
+    
+}
+#review .carousel{
+    height: 80%;
+    width: 80%;
+    margin: 0 auto;
+}
+#review .carousel .carousel-item p{
+    color: #948f8f;
+    font-style: italic;
+}
+
+/* contact section */
+#contact form{
+    width: 80%;
+    margin: 0 auto;
+    box-shadow: 2px 5px 12px #948f8f;
+    padding: 3em 2em;
+    background-color: #FAFBFB;
+}
+#contact form .msg{
+    width: 100%;
+}
+#contact form textarea{
+    width: 100%;
+    padding: 0.3em;
+    border: 1.5px solid #948f8f;
+}
+#contact form label{
+    color: #212120;
+    font-weight: bold;
+    
+}
+#contact form button{
+    background-color: #FAFBFB;
+    border: 1.5px solid #212120;
+    color: #212120;
+    width: 7em;
+    padding: 0.1em;
+    outline: none;
+}
+#contact form button:hover{
+    color: #FAFBFB;
+    background-color: #212120;
+}
+#contact form input{
+    border: 1.5px solid #948f8f;
+    border-radius: 0.3em;
+    padding: 0.3em;
+    
+}
+
+/* location section */
+#location #map{
+    padding: 0;
+    height:100%;
+    width:100%;
+}
+#location #map iframe{
+    height:600px;
+    width:100%;
+}
+#location #map .mapouter{
+    position:relative;
+    text-align:right;
+    height:100%;
+    width:100%;
+}
+#location #map .gmap_canvas{
+    overflow:hidden;
+    background:none!important;
+    height:100%;
+    width:100%;
+}
+
+/* footer */
+footer{
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    background-color: #212120;
+    margin-top: 15%;
+    padding: 3em 1em;
+    color: #948f8f;
+}
+footer .info{
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid #948f8f;
+    
+}
+footer .info h6{
+    font-weight: lighter;
+    color: #FAFBFB;
+}
+footer .info form button{
+    background-color: #212120;
+    color: #948f8f;
+    border: 0;
+    outline: none;
+    margin-left: 2px;
+    font-size: 1.5em;
+}
+footer .social-media .footer-links{
+    display: flex;
+    justify-content: center;
+    padding-top: 1em;
+}
+footer .social-media a{
+    text-decoration: none;
+    color: #948f8f;
+    margin: 0 0.5em;
+    font-size: 1.5em;
+}
+
+/* common */
+#about, #gallery, #reserve, #review, #location, #contact{
+    margin-top: 15%;
+    padding-top: 5%;
+    
+}
+ #bestsellers .heading, #about .heading, #gallery .heading, #reserve .heading, #review .heading, #location .heading, #contact .heading{
+    font-weight: light;
+    font-size: 4em;
+    margin-bottom: 10%;
+    border-bottom: 1px solid #c7c7c7;
+}
+
+
+@media screen and (min-width:768px) and (max-width:1200px){
+    .navlinks{
+        width: 80%;
+        justify-content: space-around;
+    }
+}
+@media screen and (max-width:768px){
+    body{
+        width: 100%;
+    }
+    /* navbar */
+    nav{
+        width: 100%;
+    }
+    .navlinks{
+        position: absolute;
+        
+        height: 40vh;
+        top: 8vh;
+        z-index: 100;
+        width: 100%;
+       
+        display: none;
+        background-color:white;
+        
+        
+    }
+    .burger{
+        display: block;
+    }
+    .navlinks li{
+        border-bottom: 1px solid grey;
+        width: 100%;
+        padding: 0.5em;
+    }
+    .navlinks li a{
+        font-weight: 100;
+        margin: 0.1em 0;
+        
+        
+    }
+    .nav-active{
+        
+        display: initial;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        
+        
+    }
+
+    
+    #bestsellers .col-8{
+        margin: 0 20%;
+    }
+    #bestsellers .heading, #about .heading, #gallery .heading, #reserve .heading, #review .heading, #contact .heading, #menu .heading h1{
+        font-size: 3em;
+    }
+    #bestsellers .image i{
+        display: none;
+    }
+    #about .card .card-img-top{
+        margin: 2em 5%;
+    }
+    #reserve form, #contact form{
+        width: 100%;
+        padding: 3em 1em;
+    }
+    #reserve form input{
+        padding: 0.1em;
+    }
+    footer .info{
+        display: flex;
+        flex-direction: column;
+    }
+}
